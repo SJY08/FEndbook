@@ -48,6 +48,7 @@ export function HeroSection() {
                 transition={{ delay: 0.4 }}
                 className="flex flex-wrap justify-center gap-4"
             >
+                {/* 기술스택 리스트 */}
                 {techStack.map((tech) => (
                     <motion.div
                         key={tech}

@@ -1,7 +1,7 @@
 import { Code2, BookOpen, Cpu, Globe, GraduationCap } from "lucide-react"
 
 /**
- * @description 카테고리 리스트
+ * @description 렌딩페이지 내 카테고리 리스트
  */
 export const categories = [
     {

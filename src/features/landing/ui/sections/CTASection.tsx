@@ -26,6 +26,7 @@ export function CTASection() {
 
                 <p className="text-lg mb-6 opacity-90">체계적인 학습으로 프론트엔드 실무 면접을 완벽하게 준비하세요</p>
 
+                {/* 기초인 html/css로 이동 */}
                 <Link to="/html-css">
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                         <Button size="lg" variant="secondary" className="font-bold">

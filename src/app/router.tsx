@@ -1,3 +1,4 @@
+import HtmlCssPage from "@/pages/html-css/HtmlCssPage"
 import LandingPage from "@/pages/landing/LandingPage"
 import { RootLayout } from "@/shared/model/RootLayout"
 
@@ -11,6 +12,10 @@ export const router = createBrowserRouter(
                 {
                     path: "/",
                     element: <LandingPage />,
+                },
+                {
+                    path: "/html-css",
+                    element: <HtmlCssPage />,
                 },
             ],
         },

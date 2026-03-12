@@ -10,7 +10,8 @@ export function CategoriesSection() {
         <div className="mb-12">
             <motion.h2
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.7 }}
                 className="text-3xl font-bold text-slate-900 dark:text-white text-center mb-10"
             >

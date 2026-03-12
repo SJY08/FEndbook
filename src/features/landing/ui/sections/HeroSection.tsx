@@ -6,7 +6,7 @@ const techStack = ["✨ TypeScript", "⚛️ React", "🎨 Tailwind CSS"]
 /**
  * @description 최상단 섹션
  */
-export function HeroSection() {
+export function HeroSection({ delay = 0 }: { delay?: number }) {
     return (
         <div className="text-center mb-16">
             <motion.div
@@ -27,7 +27,7 @@ export function HeroSection() {
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
+                transition={{ delay: delay + 0.2 }}
                 className="text-5xl font-extrabold text-slate-900 dark:text-white mb-4"
             >
                 팬드북 (FEndbook)
@@ -36,7 +36,7 @@ export function HeroSection() {
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: delay + 0.3 }}
                 className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8"
             >
                 프론트엔드 실무 면접 준비를 위한 체계적인 내용 정리 플랫폼
@@ -45,7 +45,7 @@ export function HeroSection() {
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
+                transition={{ delay: delay + 0.4 }}
                 className="flex flex-wrap justify-center gap-4"
             >
                 {/* 기술스택 리스트 */}

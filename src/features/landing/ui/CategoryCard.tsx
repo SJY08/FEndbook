@@ -10,12 +10,13 @@ interface Props {
     icon: any
     color: string
     index: number
+    baseDelay?: number
 }
 
 /**
  * @description 카테고리 카드 컴포넌트
  */
-export function CategoryCard({ path, title, description, icon: Icon, color, index }: Props) {
+export function CategoryCard({ path, title, description, icon: Icon, color, index, baseDelay = 0 }: Props) {
     return (
         <Link to={path}>
             <motion.div
@@ -23,7 +24,7 @@ export function CategoryCard({ path, title, description, icon: Icon, color, inde
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                     duration: 0.4,
-                    delay: index * 0.1,
+                    delay: baseDelay + index * 0.1,
                 }}
                 whileHover={{ y: -8 }}
             >

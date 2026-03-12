@@ -4,12 +4,12 @@ import { Card } from "../Card"
 /**
  * @description 프로젝트 소개 섹션
  */
-export function AboutSection() {
+export function AboutSection({ delay = 0 }: { delay?: number }) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay }}
             className="mb-16 max-w-3xl mx-auto"
         >
             <Card className="p-8 bg-white/80 dark:bg-slate-800/80 backdrop-blur shadow-lg border-2 border-slate-300 dark:border-slate-700">

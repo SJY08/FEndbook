@@ -7,12 +7,12 @@ import { Button } from "@/shared/ui/Button"
 /**
  * @description CTA(행동유도) 섹션
  */
-export function CTASection() {
+export function CTASection({ delay = 0 }: { delay?: number }) {
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 1.3 }}
+            transition={{ delay }}
             className="text-center"
         >
             <Card className="p-8 bg-linear-to-r from-indigo-600 to-fuchsia-600 dark:from-indigo-700 dark:to-fuchsia-700 text-white border-0 shadow-xl">

@@ -1,5 +1,5 @@
 import BrowserPage from "@/pages/browser/BrowserPage"
-import CSPage from "@/pages/cs/CsPage"
+import CSPage from "@/pages/cs/CSPage"
 import HtmlCssPage from "@/pages/html-css/HtmlCssPage"
 import JavascriptPage from "@/pages/javascript/JavascriptPage"
 import LandingPage from "@/pages/landing/LandingPage"

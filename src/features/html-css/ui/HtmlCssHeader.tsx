@@ -13,9 +13,7 @@ export function HtmlCssHeader() {
         >
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-3">HTML / CSS</h1>
 
-            <p className="text-lg text-slate-600 dark:text-slate-400">
-                마크업과 스타일링의 기초부터 실무 면접에서 자주 나오는 개념들을 정리했습니다.
-            </p>
+            <p className="text-lg text-slate-600 dark:text-slate-400">마크업과 스타일링의 기초부터 고급 개념까지</p>
         </motion.div>
     )
 }

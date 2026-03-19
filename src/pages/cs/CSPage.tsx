@@ -1,6 +1,6 @@
-import { CSQuestions } from "@/features/cs/model/CsQuestion"
+import { CSQuestions } from "@/features/cs/model/CSQuestion"
 import { QuestionAccordion } from "@/shared/ui/QuestionAccordion"
-import { CSHeader } from "@/features/cs/ui/CsHeader"
+import { CSHeader } from "@/features/cs/ui/CSHeader"
 
 /**
  * @description cs 설명 페이지

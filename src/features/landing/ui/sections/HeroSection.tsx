@@ -1,7 +1,7 @@
 import { Code2 } from "lucide-react"
 import { motion } from "motion/react"
 
-const techStack = ["✨ TypeScript", "⚛️ React", "🎨 Tailwind CSS"]
+const techStack = ["TypeScript", "React", "Tailwind CSS"]
 
 /**
  * @description 최상단 섹션

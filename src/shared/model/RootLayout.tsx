@@ -1,6 +1,7 @@
 import { Outlet } from "react-router"
 import { Header } from "../ui/Header"
 import { ScrollToTop } from "../ui/ScrollToTop"
+import { Footer } from "../ui/Footer"
 
 /**
  * @description 모든 페이지에서 공통으로 사용하는 레이아웃
@@ -14,6 +15,8 @@ export function RootLayout() {
             <main>
                 <Outlet />
             </main>
+
+            <Footer />
         </div>
     )
 }
